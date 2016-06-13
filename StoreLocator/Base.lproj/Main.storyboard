@@ -97,6 +97,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="map" destination="4Zb-Yl-MYi" id="6Mi-1g-e5b"/>
+                        <outlet property="tableView" destination="MaX-SU-HxO" id="uho-Jd-1yn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
