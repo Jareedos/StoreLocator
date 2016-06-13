@@ -13,6 +13,7 @@
 		BFD6C0D31D0F376D008B759C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD6C0D11D0F376D008B759C /* Main.storyboard */; };
 		BFD6C0D51D0F376D008B759C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD6C0D41D0F376D008B759C /* Assets.xcassets */; };
 		BFD6C0D81D0F376D008B759C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD6C0D61D0F376D008B759C /* LaunchScreen.storyboard */; };
+		BFD6C0E01D0F7BB9008B759C /* StoreLocationAnnotaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD6C0DF1D0F7BB9008B759C /* StoreLocationAnnotaion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BFD6C0D41D0F376D008B759C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFD6C0D71D0F376D008B759C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFD6C0D91D0F376D008B759C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD6C0DF1D0F7BB9008B759C /* StoreLocationAnnotaion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreLocationAnnotaion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				BFD6C0D41D0F376D008B759C /* Assets.xcassets */,
 				BFD6C0D61D0F376D008B759C /* LaunchScreen.storyboard */,
 				BFD6C0D91D0F376D008B759C /* Info.plist */,
+				BFD6C0DF1D0F7BB9008B759C /* StoreLocationAnnotaion.swift */,
 			);
 			path = StoreLocator;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD6C0E01D0F7BB9008B759C /* StoreLocationAnnotaion.swift in Sources */,
 				BFD6C0D01D0F376D008B759C /* LocationVC.swift in Sources */,
 				BFD6C0CC1D0F376D008B759C /* AppDelegate.swift in Sources */,
 				BFD6C0CE1D0F376D008B759C /* FirstViewController.swift in Sources */,

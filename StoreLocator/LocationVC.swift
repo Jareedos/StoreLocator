@@ -18,6 +18,12 @@ class LocationVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     let regionRadius: CLLocationDistance  = 1000
     
     let locationManager = CLLocationManager()
+    
+    let addresses = [
+        "20433 Via San Marino Cupertino, CA, 95014",
+        "20650 Homestead Rd, Cupertino, CA 95014",
+        "11010 N De Anza Blvd, Cupertino, CA 95014"
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
