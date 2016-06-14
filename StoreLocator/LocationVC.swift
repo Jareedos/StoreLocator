@@ -75,6 +75,20 @@ class LocationVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         }
     }
     
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        if annotation.isKindOfClass(StoreLocationAnnotaion) {
+            let annoView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "Default")
+            annoView.pinTintColor = UIColor.blackColor()
+            annoView.animatesDrop = true
+            return annoView
+            
+        } else if annotation.isKindOfClass(MKUserLocation){
+            return nil
+        }
+        return nil
+    }
+    
     func createAnnotationForLocation(location: CLLocation) {
         let store = StoreLocationAnnotaion(coordinate: location.coordinate)
         map.addAnnotation(store)
