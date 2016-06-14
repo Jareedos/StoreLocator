@@ -31,7 +31,9 @@ class LocationVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         tableView.delegate = self
         tableView.dataSource = self
         
-       
+        for add in addresses {
+            getPlacemarkFromAddress(add)
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -70,6 +72,21 @@ class LocationVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
         if let loc = userLocation.location {
             centerMapOnLocation(loc)
+        }
+    }
+    
+    func createAnnotationForLocation(location: CLLocation) {
+        let store = StoreLocationAnnotaion(coordinate: location.coordinate)
+        map.addAnnotation(store)
+    }
+    
+    func getPlacemarkFromAddress(address: String) {
+        CLGeocoder().geocodeAddressString(address) { (placemarks: [CLPlacemark]?, error: NSError?) -> Void in
+            if let marks = placemarks where marks.count > 0 {
+                if let loc = marks[0].location {
+                    self.createAnnotationForLocation(loc)
+                }
+            }
         }
     }
 
